@@ -16,20 +16,6 @@
 
         <p>For gaining mass, a 15% surplus is normal. For losing weight, a 15% defecit is standard while 20% is more aggressive.</p>
 
-        <script>
-            $("form").submit((e) => {
-                var nameInput = $("#calorie-input").val();
-                if (!nameInput) {
-                    $("#err-msg").html("Please enter a calorie amount");
-                    e.preventDefault();
-                    return false;
-                }
-                $("#results").html("Loading...");
-            });
-            $("#calorie-input").on("input", () => {
-                $("#err-msg").html("");
-                $("#results").html("");
-            });
-        </script>
+   
     </body>
 </html>
